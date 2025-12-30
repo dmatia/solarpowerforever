@@ -1,43 +1,147 @@
 @import url('fonts.css');
 
 #menu-container {
+     background-color: rgba(0, 0, 0, 0.6);
     display: block;
     background-image: url('../assets/images/imagem-3-1024x1024.jpeg');
+      background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
 
+
+
 #menu-icons {
     display: flex;
     justify-content: right;
     padding: 5vh 10vw 0 0 ;
-
 }
 
 #menu-icons i {
    color: #fff;
    font-size: 3rem;
-   padding: 1rem;
+}
+
+#menu-tittle {
+   background-image: url(../assets/images/spp.png);
+   display: block;
+   min-height: 10vh;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 #menu-list {
-    padding-top: 10vh;
-    text-align: center;
+    text-align: left;
 }
 
 #menu-list ul{
     list-style: none;
-    padding: 0;
 }
 
 #menu-list ul li {
-    margin: 20px 0;
-    font-size: 2rem;
     font-family: 'abril-fatface';
+    font-size: 3rem;
+    margin-bottom: -1rem;
 }
 
 #menu-list ul li a{
     text-decoration: none;
     color: #fff;
+}
+
+
+#menu-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4vw;
+  color: #fff;
+  letter-spacing: 0.15em;
+  width: 80vw;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+#menu-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.8rem;
+  opacity: 0.8;
+}
+
+#menu-social a:hover {
+  opacity: 1;
+}
+
+#menu-logo {
+  height: 50px;
+  width: auto;
+  margin-right: 1.5rem;
+}
+
+#menu-social span {
+  margin: 0 1.2rem;
+  opacity: 0;
+}
+
+#menu-social a:last-of-type {
+  margin-left: auto;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 767px) {
+  #menu-social {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #menu-social a:last-of-type {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+#menu-list ul li {
+    font-family: 'abril-fatface';
+    font-size: 4rem;
+    margin-bottom: -1rem;
+}
+
+}
+
+@media (min-width: 1024px) {
+#menu-tittle {
+   background-image: url(../assets/images/spp.png);
+   display: block;
+   min-height: 15vh;
+}
+
+
+ #menu-icons i {
+   font-size: 4rem;
+}
+
+#menu-list {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+}
+
+#menu-list ul li {
+    font-family: 'abril-fatface';
+    font-size: 4rem;
+    margin-bottom: -1rem;
+}
+
+
+
 }
