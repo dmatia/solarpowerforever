@@ -12,16 +12,21 @@
   <title>solarpowerforever</title>
 </head>
 
-<body>
+<body style="background-color: black;">
 
-  <!-- contenedor para el menu por script -->
-  <div id="menu-container">
+  <!-- BOTÓN ABRIR (SIEMPRE VISIBLE) -->
+  <div id="menu-toggle">
+    <i id="open-menu" class="bi bi-three-dots-vertical"></i>
+  </div>
+
+  <!-- MENÚ -->
+  <div id="menu-container" class="menu">
+
     <div id="menu-icons">
-      <i class="bi bi-x"></i>
+      <i id="close-menu" class="bi bi-x"></i>
     </div>
 
-    <div id="menu-tittle">
-    </div>
+    <div id="menu-tittle"></div>
 
     <nav id="menu-list">
       <ul>
@@ -35,15 +40,17 @@
 
     <div id="menu-social">
       <img src="assets/images/Lorde_Logotype_Final.png" alt="-Lorde" id="menu-logo">
-      <a href="https://www.instagram.com/lorde/" target="_blank">IN</a>
-      <a href="https://www.facebook.com/lordemusic" target="_blank">FB</a>
-      <a href="https://www.x.com/lorde" target="_blank">X</a>
+      <a href="#">IN</a>
+      <a href="#">FB</a>
+      <a href="#">X</a>
       <span>|</span>
-      <a href="https://www.lorde.co.nz/" target="_blank">Official Site</a>
+      <a href="#">Official Site</a>
     </div>
+
   </div>
 
-  <script src="script.js"></script>
+
+  <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

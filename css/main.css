@@ -1,8 +1,9 @@
 @import url('fonts.css');
 
-#menu-container {
+.menu {
+
      background-color: rgba(0, 0, 0, 0.6);
-    display: block;
+    display: none;
     background-image: url('../assets/images/imagem-3-1024x1024.jpeg');
       background-blend-mode: multiply;
     background-position: center;
@@ -10,7 +11,43 @@
     height: 100vh;
 }
 
+/* botón abrir */
+#menu-toggle {
+  position: fixed;
+  top: 5vh;
+  right: 10vw;
+  z-index: 1000;
+}
 
+#menu-toggle i {
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* menú */
+.menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-image: url('../assets/images/imagem-3-1024x1024.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: multiply;
+  z-index: 999;
+}
+
+.menu.is-open {
+  display: block;
+}
+
+/* cerrar */
+#close-menu {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
 
 #menu-icons {
     display: flex;
