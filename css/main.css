@@ -128,6 +128,35 @@
   letter-spacing: 0.1em;
 }
 
+#menu-tittle,
+#menu-list,
+#menu-social {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.menu.is-open #menu-tittle {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.15s;
+}
+
+.menu.is-open #menu-list {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.25s;
+}
+
+.menu.is-open #menu-social {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.35s;
+}
+
+
 @media (max-width: 767px) {
   #menu-social {
     flex-wrap: wrap;
