@@ -1,8 +1,10 @@
+@import url('fonts.css');
+
 .stack {
   position: relative;
   max-width: 300px;
   height: 300px;
-  margin: 25vh auto;
+  margin: 25vh auto 0;
 }
 
 .card {
@@ -25,13 +27,13 @@
 }
 
 /* Posición final y z-index */
-.card:nth-child(1) { transform: translate(0,0) scale(1); z-index: 7; animation-delay: 0s; }
-.card:nth-child(2) { transform: translate(-30px,-30px) scale(1); z-index: 6; animation-delay: 0.2s; }
-.card:nth-child(3) { transform: translate(-60px,-60px) scale(1); z-index: 5; animation-delay: 0.4s; }
-.card:nth-child(4) { transform: translate(-90px,-90px) scale(1); z-index: 4; animation-delay: 0.6s; }
-.card:nth-child(5) { transform: translate(10px,-120px) scale(1); z-index: 3; animation-delay: 0.8s; }
-.card:nth-child(6) { transform: translate(40px,-150px) scale(1); z-index: 2; animation-delay: 1s; }
-.card:nth-child(7) { transform: translate(70px,-180px) scale(1); z-index: 1; animation-delay: 1.2s; }
+.card:nth-child(1) { transform: translate(0,0) scale(1); z-index: 7; animation-delay: .8s; }
+.card:nth-child(2) { transform: translate(-30px,-30px) scale(1); z-index: 6; animation-delay: .7s; }
+.card:nth-child(3) { transform: translate(-60px,-60px) scale(1); z-index: 5; animation-delay: 0.6s; }
+.card:nth-child(4) { transform: translate(-90px,-90px) scale(1); z-index: 4; animation-delay: 0.5s; }
+.card:nth-child(5) { transform: translate(10px,-120px) scale(1); z-index: 3; animation-delay: 0.4s; }
+.card:nth-child(6) { transform: translate(40px,-150px) scale(1); z-index: 2; animation-delay: 0.3s; }
+.card:nth-child(7) { transform: translate(70px,-180px) scale(1); z-index: 1; animation-delay: .2s; }
 
 /* Animación desde la posición inicial (carta 7) a la final */
 @keyframes appear {
@@ -40,8 +42,30 @@
     opacity: 0;
   }
   to {
-    /* Cada carta tomará su transform final según CSS de nth-child */
-    /* Esto se sobrescribe por cada nth-child */
+    opacity: 1;
+  }
+}
+
+.about-contenedor-1{
+  display: block;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  animation: appear-content 5s forwards;
+}
+
+.about-contenedor-1 p{
+  font-family: 'abril-fatface';
+  color: white;
+  font-size: 1.5rem;
+}
+
+@keyframes appear-content{
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }
