@@ -87,6 +87,18 @@
     color: #fff;
 }
 
+#menu-list ul li a:hover{
+    text-shadow: 0px 0px 5px #fff;
+}
+
+#menu-list ul li a:active{
+    text-shadow: 0px 0px 10px #fff;
+}
+
+#menu-list ul li a::selection, #menu-social::selection{
+    background-color: rgb(0, 0, 0, 0);
+}
+
 
 #menu-social {
   display: flex;
@@ -111,6 +123,7 @@
 #menu-social a:hover {
   opacity: 1;
 }
+
 
 #menu-logo {
   height: 50px;

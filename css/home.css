@@ -70,6 +70,9 @@
   opacity: 1;
 }
 
+#home-social::selection{
+     background-color: rgb(0, 0, 0, 0);
+}
 
 #menu-logo {
   height: 50px;
