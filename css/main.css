@@ -1,0 +1,43 @@
+@import url('fonts.css');
+
+#menu-container {
+    display: block;
+    background-image: url('../assets/images/imagem-3-1024x1024.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#menu-icons {
+    display: flex;
+    justify-content: right;
+    padding: 5vh 10vw 0 0 ;
+
+}
+
+#menu-icons i {
+   color: #fff;
+   font-size: 3rem;
+   padding: 1rem;
+}
+
+#menu-list {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+#menu-list ul{
+    list-style: none;
+    padding: 0;
+}
+
+#menu-list ul li {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-family: 'abril-fatface';
+}
+
+#menu-list ul li a{
+    text-decoration: none;
+    color: #fff;
+}
